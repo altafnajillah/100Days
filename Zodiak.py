@@ -16,7 +16,7 @@ elif ((tanggal >= 21 and bulan == 5) or (tanggal <= 20 and bulan == 6)):
 elif ((tanggal >= 21 and bulan == 6) or (tanggal <= 22 and bulan == 7)):
 	print("Tanggal", +tanggal, "bulan", +bulan,", Zodiak anda Cancer\n")
 elif ((tanggal >= 23 and bulan == 7) or (tanggal <= 22 and bulan == 8)):
-	print("Tanggal", +tanggal, "bulan", +bulan,", Zodiak andaLeo\n")
+	print("Tanggal", +tanggal, "bulan", +bulan,", Zodiak anda Leo\n")
 elif ((tanggal >= 23 and bulan == 8) or (tanggal <= 22 and bulan == 9)):
 	print("Tanggal", +tanggal, "bulan", +bulan,", Zodiak anda Virgo\n")
 elif ((tanggal >= 23 and bulan == 9) or (tanggal <= 22 and bulan == 10)):
