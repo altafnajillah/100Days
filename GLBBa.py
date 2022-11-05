@@ -1,7 +1,7 @@
 '''Program Menghitung Gerak Lurus Berubah Bertauran'''
 print(80*"=")
 
-print("Anda akan mencari nilai dari percepatan (a).\Input hal-hal berikut : ")
+print("Anda akan mencari nilai dari percepatan (a).\nInput hal-hal berikut : ")
 
 rumus = input("Apakah anda mengetahui nilai jarak (S)? [Y/N] : ")
 if(rumus.lower() == "y"):
