@@ -3,7 +3,6 @@
 print("Memperkirakan keadaan benda dalam air berdasarkan hukum Archimedes dari volume dan berat benda")
 
 rhoair = 1000.0
-g = 10
 V = float(input("Masukkan nilai volume benda (m³)\t: "))
 m = float(input("Masukkan nilai berat benda (kg)\t\t: "))
 rhobenda = m / V
