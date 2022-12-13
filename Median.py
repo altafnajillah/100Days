@@ -1,18 +1,23 @@
-'''Program menghitung Median'''
+'''Program menghitung Mean'''
 
-print('Program Menghitung Median')
+print('Program Menghitung Mean')
 
-Banyak_Data = int(input('Masukkan Banyaknya Data = '))
-x = []
-for i in range(1, Banyak_Data + 1):
-    print('Angka ke-', i, ': ',sep='' ,end='')
-    x.append(int(input()))
+def nilai_tengah (Data):
+    Data.sort()
+    banyak_data = len(Data)
+    nilai_tengah = banyak_data // 2
+    if banyak_data % 2 == 1:
+        return Data[nilai_tengah]
+    else :
+        return (Data[nilai_tengah - 1] + Data[nilai_tengah]) / 2
 
-print()
+inputan = input('Masukkan deret bilangan (pisahkan dengan koma): ')
+Data = []
 
-total = sum(x)
+for bilangan in inputan.split(','):
+    Data.append(int(bilangan))
 
-median = total / Banyak_Data
-print('Median =', median )
+print(f'Data yang di input adalah {Data}')
+print(f'Median dari data tersebut adalah {nilai_tengah(Data)}')
 
-print(50*'=')
+print(60*'=')
