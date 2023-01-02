@@ -17,32 +17,33 @@ banyakMakul = int(input("Berapa banyak mata kuliah yang diambil? : "))
 print()
 
 for i in range(1, banyakMakul + 1):
-  print(f"Matakuliah ke-{i}")
-  nilai = input("Masukkan nilai [A, A-, B+ dst]\t: ") #nilai yang di input berupa huruf. A, A-, B+, B, B- dan seterusnya
-  sks = int(input(f"Masukkan bobot SKS makul ke-{i}\t: "))
-  if (nilai.upper() == "A"):
-      muatan = 4.00
-  elif (nilai.upper() == "A-"):
-      muatan = 3.75
-  elif (nilai.upper() == "B+"):
-      muatan = 3.50
-  elif (nilai.upper() == "B"):
-      muatan = 3.00
-  elif (nilai.upper() == "B-"):
-      muatan = 2.75
-  elif (nilai.upper() == "C"):
-      muatan = 2.00
-  elif (nilai.upper() == "D"):
-      muatan = 1.00
-  elif (nilai.upper() == "E"):
-      muatan = 0.00
-  else :
-      print("Input salah")
-      break
-  tNilai = muatan * sks  
-  x.append(tNilai)
-  y.append(sks)
-  print()
+    print(f"Matakuliah ke-{i}")
+    nilai = input("Masukkan nilai [A, A-, B+ dst]\t: ") #nilai yang di input berupa huruf. A, A-, B+, B, B- dan seterusnya
+    sks = int(input(f"Masukkan bobot SKS makul ke-{i}\t: "))
+    if (nilai.upper() == "A"):
+        muatan = 4.00
+    elif (nilai.upper() == "A-"):
+        muatan = 3.75
+    elif (nilai.upper() == "B+"):
+        muatan = 3.50
+    elif (nilai.upper() == "B"):
+        muatan = 3.00
+    elif (nilai.upper() == "B-"):
+        muatan = 2.75
+    elif (nilai.upper() == "C"):
+        muatan = 2.00
+    elif (nilai.upper() == "D"):
+        muatan = 1.00
+    elif (nilai.upper() == "E"):
+        muatan = 0.00
+    else :
+        print("Input salah")
+        break
+        
+    tNilai = muatan * sks  
+    x.append(tNilai)
+    y.append(sks)
+    print()
 
 
 totalSKS = sum(y)
