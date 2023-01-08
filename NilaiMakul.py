@@ -33,7 +33,7 @@ if (0 <= Kehadiran <= 16):
             print("Nilai pengetahuan anda B")
         elif (total > 64):
             print("Nilai pengetahuan anda B-")
-        elif (total <= 54):
+        elif (total > 54):
             print("Nilai pengetahuan anda C")
         elif (total > 39):
             print("Nilai pengetahuan anda D")
